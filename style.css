@@ -1,0 +1,167 @@
+@font-face {
+    font-family: raleway;
+    src: url(./fonts/static/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url(./fonts/static/Raleway-Bold.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: raleway;
+    font-size: 14px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#firstzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    background-color: hsl(228, 56%, 26%);
+    width: 350px;
+    height: 275px;
+    border-radius: 15px 50% 15px 15px;
+}
+
+#logo {
+    max-width: 150px;
+    margin-top: 20%;
+    margin-right: 27%;
+}
+
+#threelogos {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 33%;
+}
+
+#threelogos img {
+    max-height: 25px;
+    background-color: hsl(229, 57%, 11%);
+    background-size: cover;
+    padding: 12%;
+    border-radius: 14px;
+}
+
+#secondzone {
+    background-color: hsl(228, 56%, 26%);
+    width: 650px;
+    height: 200px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#secondzone p {
+    font-family: raleway;
+}
+
+#secondzone strong {
+    font-weight: bold;
+    font-weight: 1000;
+    color: white;
+    font-family: raleway-bold;
+}
+
+#gigabytes {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    background: linear-gradient(to right,
+    hsl(6, 100%, 80%) 0%,
+    hsl(335, 100%, 65%)) 50%,
+    white 50%,
+    white 100%;
+    transition: background 0.1s ease;
+}
+
+#gigabytes::-webkit-slider-runnable-track {
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+#gigabytes::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#gigabytestext {
+    display: flex;
+    flex-direction: row;
+    gap: 16rem;
+}
+
+#bottomtext {
+    display: flex;
+    flex-direction: row;
+    gap: 32rem;
+}
+
+#bottomtext p {
+    font-weight: bold;
+    font-weight: 1000;
+    color: white;
+}
+
+.pub {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    color: black;
+}
+
+.pub::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid white;
+}
+
+#pub strong {
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    font-weight: 10000;
+}
